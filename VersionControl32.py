@@ -11,7 +11,7 @@ def encode_password(input_password):  # Encode the password by adding three to e
     return encoded_password
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":      # Main Logic
     encoded_password = None
     while True:
         print("Menu\n-------------\n"  # Print the menu
