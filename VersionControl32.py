@@ -12,6 +12,15 @@ def encode_password(input_password):   # Encode the password by adding three to 
         encoded_password += str((cur_digit + 3) % 10)  
     return encoded_password
 
+# Added decode_password function
+def decode_password(encoded_password):
+    decoded_password = ""
+    for num in encoded_password:
+        current_digit = int(num)
+        decoded_password += str((current_digit - 3) % 10)
+    return decoded_password
+
+
 
 if __name__ == "__main__":
     encoded_password = None
